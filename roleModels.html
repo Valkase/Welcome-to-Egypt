@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>Egyptian role models</title>
+        <style>
+            body{
+                overflow: hidden;
+                background-image: url(PYRAMIDS.jpg);
+                background-repeat: no-repeat;
+                background-size: 1545px;
+                margin: -10px;
+            }
+            header nav ul{
+                position: absolute;
+                top: 25px;
+                right: 39px; 
+                margin: 2px;
+                box-shadow: 5px 5px rgb(106, 100, 72);
+                background-color: rgb(225, 170, 97);
+                border: 2px solid seashell;
+                border-radius: 20px;
+                padding: 10px;
+                text-align: center;
+                width: 30%;
+                animation: slideInRight 2s linear;
+            }
+            header nav ul li{
+                display: inline;
+                list-style: none;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            header nav ul li a{
+                text-decoration: none;
+            }
+            header nav ul li a button{
+                background:none;
+                color: rgb(208, 254, 128);
+                border: none;
+                transition: transform 0.5s ease 0s;
+
+            }
+            header nav ul li a button:hover{
+                transform: translateY(-5px);
+                color: rgb(238, 238, 238);
+            }
+            .logo{
+                margin: 50px;
+                animation: slideInLeft 2s ease-in;
+            }
+            .no1, .no2{
+                margin: 80px;
+                position: absolute;
+                border: 3px solid burlywood;
+                border-radius:10px ;
+            }
+            .no1{
+                top:100px;
+                animation: slideInLeft 2s ease-out ;
+                transition: transform 0.5s ease;
+                
+            }
+            .no1:hover{
+                border: 3px solid rgb(140, 89, 22);
+                transform: scale(1.1);
+            }
+            .no2{
+                top: 320px;
+                right: 100px;
+                animation: slideInRight 2s ease-in ;
+                transition: transform 0.5s ease;
+            }
+            .no2:hover{
+                border: 3px solid rgb(140, 89, 22);
+                transform: scale(1.1);
+            }
+            .no1Txt{
+                background-color: antiquewhite;
+                position: absolute;
+                font-size: 19px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius: 10px;
+                top: 197px;
+                left: 348px;
+                animation: slideInRight 2s ease-in-out ;
+            }
+            .no2Txt{
+                background-color: antiquewhite;
+                position: absolute;
+                font-size: 19px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius: 10px;
+                top: 475px;
+                left: 115px;
+                animation: slideInLeft 2s ease ;
+            }
+            @keyframes slideInLeft{
+                from{
+                    transform: translateX(-1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            @keyframes slideInRight{
+                from{
+                    transform: translateX(1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Role Models.png" alt="" class="Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <button>Home</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="food.html">
+                            <button>Food</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="music.html">
+                            <button>Music</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attractions.html">
+                            <button>Attractions</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="roleModels.html">
+                            <button>Role Modles</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <div>
+                <a href="ahmedZewail.html">
+                    <img src="Ahmed Zewail.jpeg" class="no1">
+                </a>
+                <p class="no1Txt">Ahmed Zewail was an Egyptian-American chemist who was<br> awarded the 1999 Nobel Prize in Chemistry for his work on femtochemistry.<br> He was the first Egyptian and Arab to win a Nobel Prize in a scientific field,<br> and the second African to win a Nobel Prize in Chemistry.</p>
+            </div>
+            <div>
+                <a href="magdyYacoub.html">
+                    <img src="magdy yacoub.jpeg" class="no2">
+                </a>
+                <p class="no2Txt">Sir Magdi Yacoub is a world-renowned cardiothoracic surgeon who has performed over 20,000 operations<br> and published over 1,000 papers in scientific journals. He is a Fellow of the Royal College of Surgeons of England,<br> the Royal College of Physicians, and the Royal Society. He was knighted by the Queen in 1991 for his services to medicine.</p>
+            </div>
+        </div>
+    </body>
+</html>

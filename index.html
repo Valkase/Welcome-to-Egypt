@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Welcome to Egypt</title>
+        <style>
+            body{
+                overflow: hidden;
+                background-image: url(PYRAMIDS.jpg);
+                background-repeat: no-repeat;
+                background-size: 1545px;
+                margin: -10px;
+            }
+            header nav ul{
+                position: absolute;
+                top: 25px;
+                right: 39px; 
+                margin: 2px;
+                box-shadow: 5px 5px rgb(106, 100, 72);
+                background-color: rgb(225, 170, 97);
+                border: 2px solid seashell;
+                border-radius: 20px;
+                padding: 10px;
+                text-align: center;
+                width: 30%;
+                animation: slideInRight 2s linear;                                                  
+            }
+            header nav ul li{
+                display: inline;
+                list-style: none;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            header nav ul li a{
+                text-decoration: none;
+            }
+            header nav ul li a button{
+                background:none;
+                color: rgb(208, 254, 128);
+                border: none;
+                transition: transform 0.5s ease 0s;
+
+            }
+            header nav ul li a button:hover{
+                transform: translateY(-5px);
+                color: rgb(238, 238, 238);
+            }
+            .logo{
+                margin: 50px;
+                animation: slideInLeft 2s ease-in;
+            }
+            .welcomeTxt{
+                margin-left: 50px;
+                font-size: 22px;
+                color: rgb(138, 95, 39);
+                animation: slideInLeft 2s ease-out  ;
+            }
+            .wikiBtn{
+                width: 271px;
+                height: 51px;
+                font-size: 19px;
+                font-weight: 900;
+                position: absolute;
+                top: 455px;
+                right: 970px;
+                background-color: seashell;
+                color: rgb(231, 178, 110);
+                border: 4px solid rgb(140, 89, 22);
+                animation: slideInLeft 2s ease-in-out  ;
+                transition: transform 0.5s ease 0s;
+            }
+            .wikiBtn:hover{
+                width: 271px;
+                height: 51px;
+                font-size: 19px;
+                font-weight: 900;
+                position: absolute;
+                top: 455px;
+                right: 970px;
+                background-color: rgb(140, 89, 22);
+                color: seashell;
+                border: 2px solid rgb(140, 89, 22);
+                transform: translateY(-10px);
+            }
+            .YTvideo{ 
+                height: 205px;
+                position: absolute;
+                bottom: 300px;
+                left: 1075px;
+                width: 362px;
+                border: 4px solid burlywood;
+
+            }
+            @keyframes slideInLeft{
+                from{
+                    transform: translateX(-1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            @keyframes slideInRight{
+                from{
+                    transform: translateX(1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="TheHeader">
+            <header>
+                <img src="Welcome to Egypr.png" alt="" class="Logo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <button>Home</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="food.html">
+                                <button>Food</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="music.html">
+                                <button>Music</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="attractions.html">
+                                <button>Attractions</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="roleModels.html">
+                                <button>Role Modles</button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <br>
+            <p class="welcomeTxt"><i><b>Welcome to Egypt! The land of pharaohs, the pyramids, and the nile river.<br>
+            We are a country with rich history and culture
+            , and we welcome you to explore all we have to offer,<br> from the bustling streets in cairo, to the ancient temples in luxor,<br>
+            there is something for everyone in Egypt. So come for the experience the magic of country yourself.<br><br><br>
+            You can learn more about Egypt from the button below:</b></i></p>
+            <a href="https://en.wikipedia.org/wiki/Egypt">
+                <button class="wikiBtn">Learn more about Egypt</button>
+            </a>
+            <iframe src="https://www.youtube.com/embed/BapSQFJPMM0" class="YTvideo"></iframe>
+        </div>
+    </body>
+</html>

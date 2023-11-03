@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>Music page</title>
+        <style>
+            body{
+                overflow: hidden;
+                background-image: url(PYRAMIDS.jpg);
+                background-repeat: no-repeat;
+                background-size: 1545px;
+                margin: -10px;
+            }
+            header nav ul{
+                position: absolute;
+                top: 25px;
+                right: 39px; 
+                margin: 2px;
+                box-shadow: 5px 5px rgb(106, 100, 72);
+                background-color: rgb(225, 170, 97);
+                border: 2px solid seashell;
+                border-radius: 20px;
+                padding: 10px;
+                text-align: center;
+                width: 30%;
+                animation: slideInRight 2s linear;
+            }
+            header nav ul li{
+                display: inline;
+                list-style: none;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            header nav ul li a{
+                text-decoration: none;
+            }
+            header nav ul li a button{
+                background:none;
+                color: rgb(208, 254, 128);
+                border: none;
+                transition: transform 0.5s ease 0s;
+
+            }
+            header nav ul li a button:hover{
+                transform: translateY(-5px);
+                color: rgb(238, 238, 238);
+            }
+            .logo{
+                margin: 50px;
+                animation: slideInLeft 2s ease-in;
+            }
+            .YTvideo1{ 
+                height: 205px;
+                position: absolute;
+                bottom: 300px;
+                left: 920px;
+                width: 362px;
+                border: 4px solid burlywood;
+                border-radius: 10px;
+
+            }
+            figcaption{
+                background-color: antiquewhite;
+                position: absolute;
+                margin-left: 50px;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius:10px ;
+                margin: 10px;
+            }
+            .YTvideo2{
+                height: 205px;
+                position: absolute;
+                bottom: 37px;
+                left: 60px;
+                width: 362px;
+                border: 4px solid burlywood;
+                border-radius: 10px;
+            }
+            .des1{
+                background-color: antiquewhite;
+                position: absolute;
+                top: 267px;
+                left: 75px;
+                animation: slideInLeft 2s ease-in-out;            }
+            .des2{
+                background-color: antiquewhite;
+                position: absolute;
+                top: 548px;
+                left: 451px;
+                animation: slideInRight 2s ease-out ;
+            }
+            @keyframes slideInLeft{
+                from{
+                    transform: translateX(-1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            @keyframes slideInRight{
+                from{
+                    transform: translateX(1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <img src="Music page.png" alt="" class="logo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <button>Home</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="food.html">
+                                <button>Food</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="music.html">
+                                <button>Music</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="attractions.html">
+                                <button>Attractions</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="roleModels.html">
+                                <button>Role Modles</button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="music">
+            <div class="song1">
+                <figure>
+                    <iframe src="https://www.youtube.com/embed/2qX8219HZoA?si=VRzHEli-bFbmAuEi" class="YTvideo1"></iframe>
+                    <figcaption class="des1"><i><b>"يا حبيبتي يا مصر" is a patriotic song by the Egyptian singer شادية (Shadia).<br>
+                    It was released in 1962, and it quickly became one of the most popular songs in Egypt.<br>
+                    The song is a celebration of Egypt's rich history and culture.<br> It is a reminder of Egypt's past glory and its potential for a bright future.</i></b>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="song2">
+                <figure>    
+                    <iframe src="https://www.youtube.com/embed/kPFOEld732k?si=g6HLIWq6wojsyqK4" class="YTvideo2"></iframe>
+                    <figcaption class="des2"><i><b>"اهواك" is a song by the Egyptian singer Abdel Halim Hafez.<br> It was released in 1957 and quickly became one of the most popular songs in Egypt.<br> The song is a love song that expresses the singer's deep and abiding love for his beloved.</i></b></figcaption>
+                </figure>
+                
+            </div>
+        </div>
+    </body>
+</html>

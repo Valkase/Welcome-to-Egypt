@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Food page</title>
+        <style>
+            body{
+                overflow: hidden;
+                background-image: url(PYRAMIDS.jpg);
+                background-repeat: no-repeat;
+                background-size: 1545px;
+                margin: -10px;
+            }
+            header nav ul{
+                position: absolute;
+                top: 25px;
+                right: 39px; 
+                margin: 2px;
+                box-shadow: 5px 5px rgb(106, 100, 72);
+                background-color: rgb(225, 170, 97);
+                border: 2px solid seashell;
+                border-radius: 20px;
+                padding: 10px;
+                text-align: center;
+                width: 30%;
+                animation: slideInRight 2s linear;
+            }
+            header nav ul li{
+                display: inline;
+                list-style: none;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            header nav ul li a{
+                text-decoration: none;
+            }
+            header nav ul li a button{
+                background:none;
+                color: rgb(208, 254, 128);
+                border: none;
+                transition: transform 0.5s ease 0s;
+
+            }
+            header nav ul li a button:hover{
+                transform: translateY(-5px);
+                color: rgb(238, 238, 238);
+            }
+            .logo{
+                margin: 50px;
+                animation: slideInLeft 2s ease;
+            }
+            .falafel , .mahshi , .koshari{
+                margin: 80px;
+                position: absolute;
+                border: 3px solid burlywood;
+                border-radius:10px ;
+            }
+            .falafel{
+                animation: slideInRight 2s linear;
+                width: 185px;
+                height: 138px;
+                top: 100px;
+                right: 100px;
+            }
+            .mahshi{
+                animation: slideInLeft 2s ease-in;
+                width: 185px;
+                height: 162px;
+                top: 260px;
+                right: auto;
+            }
+            .koshari{
+                animation: slideInRight 2s linear;
+                width: 185px;
+                height: 138px;
+                top: 450px;
+                right: 100px;
+            }
+            .falafelTxt{
+                background-color: antiquewhite;
+                animation: slideInLeft 2s ease-in-out;
+                right: 382px;
+                position: absolute;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius: 10px;
+                margin: 10px;
+                top: 180px;
+            }
+            .mahshiTxt{
+                background-color: antiquewhite;
+                animation: slideInRight 2s ease-out;
+                right: 585px;
+                position: absolute;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius: 10px;
+                margin: 10px;
+                top: 347px;
+            }
+            .koshariTxt{
+                background-color: antiquewhite;
+                animation: slideInLeft 2s ease-in-out;
+                right: 382px;
+                position: absolute;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                padding: 20px;
+                border: 3px solid burlywood;
+                border-radius: 10px;
+                margin: 10px;
+                top: 518px;
+            }
+            @keyframes slideInLeft{
+                from{
+                    transform: translateX(-1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            @keyframes slideInRight{
+                from{
+                    transform: translateX(1000px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Food page.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <button>Home</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="food.html">
+                            <button>Food</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="music.html">
+                            <button>Music</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="attractions.html">
+                            <button>Attractions</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="roleModels.html">
+                            <button>Role Modles</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="recipes">
+            <div class="recipe1">
+                <img src="falafel.webp" alt="" class="falafel">
+                <p class="falafelTxt"> Falafel are deep-fried balls made from mashed chickpeas, fava beans, herbs,<br> and spices. They are often served in a pita bread with tahini sauce, hummus,<br> and vegetables.
+                    Taameya (Falafel) Egyptian food</p>
+            </div>
+            <div class="recipe2">
+                <img src="Mahshi.jpeg" alt="" class="mahshi">
+                <p class="mahshiTxt">Mahshi is a dish of stuffed vegetables, such as tomatoes, peppers,<br> or eggplants, that are filled with a mixture of rice, meat, and spices.</p>
+            </div>
+            <div class="recipe3">
+                <img src="Koshari.jpg" alt="" class="Koshari">
+                <p class="koshariTxt">Koshari is Egypt's national dish and a widely popular street food. It is a traditional Egyptian staple, mixing pasta,<br> Egyptian fried rice, vermicelli and brown lentils, and topped with a zesty tomato sauce,<br> garlic vinegar and garnished with chickpeas and crispy fried onions. It is often served with sprinklings of garlic juice;<br> garlic vinegar and hot sauce are optional.</p>
+            </div>
+        </div>
+    </body>
+</html>
